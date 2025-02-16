@@ -2,62 +2,62 @@
     {
         "id": "1",
         "video": "./video-plataforma/video1.mp4",
-        "webm": "./videos-webm/video1.webm"
+        "jpg": "./thumbnail/video1.jpg"
     },
     {
         "id": "2",
         "video": "./video-plataforma/video2.mp4",
-        "webm": "./videos-webm/video2.webm"
+        "jpg": "./thumbnail/video2.jpg"
     },
     {
         "id": "3",
         "video": "./video-plataforma/video3.mp4",
-        "webm": "./videos-webm/video3.webm"
+        "jpg": "./thumbnail/video3.jpg"
     },
     {
         "id": "4",
         "video": "./video-plataforma/video4.mp4",
-        "webm": "./videos-webm/video4.webm"
+        "jpg": "./thumbnail/video4.jpg"
     },
     {
         "id": "5",
         "video": "./video-plataforma/video5.mp4",
-        "webm": "./videos-webm/video5.webm"
+        "jpg": "./thumbnail/video5.jpg"
     },
     {
         "id": "6",
         "video": "./video-plataforma/video6.mp4",
-        "webm": "./videos-webm/video6.webm"
+        "jpg": "./thumbnail/video6.jpg"
     },
     {
         "id": "7",
         "video": "./video-plataforma/video7.mp4",
-        "webm": "./videos-webm/video7.webm"
+        "jpg": "./thumbnail/video7.jpg"
     },
     {
         "id": "8",
         "video": "./video-plataforma/video8.mp4",
-        "webm": "./videos-webm/video8.webm"
+        "jpg": "./thumbnail/video8.jpg"
     },
     {
         "id": "9",
         "video": "./video-plataforma/video9.mp4",
-        "webm": "./videos-webm/video9.webm"
+        "jpg": "./thumbnail/video9.jpg"
     },
     {
         "id": "10",
         "video": "./video-plataforma/video10.mp4",
-        "webm": "./videos-webm/video10.webm"
+        "jpg": "./thumbnail/video10.jpg"
     },
     {
         "id": "11",
         "video": "./video-plataforma/video11.mp4",
-        "webm": "./videos-webm/video11.webm"
+        "jpg": "./thumbnail/video11.jpg"
     },
     {
         "id": "12",
         "video": "./video-plataforma/video13.mp4",
-        "webm": "./videos-webm/video12.webm"
+        "jpg": "./thumbnail/video12.jpg"
     }
 
 ]
