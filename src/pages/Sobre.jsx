@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Apresentacao() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-t from-blue-950 to-black text-white px-8 py-10">
@@ -16,6 +18,10 @@ export default function Apresentacao() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia, nisl nec malesuada dictum, enim urna vehicula ligula, sit amet maximus lorem nunc id enim. Ut egestas erat sit amet orci malesuada, nec iaculis tortor placerat. Aliquam erat volutpat. Nulla facilisi.
           </p>
         </div>
+
+        <Link to="/contato">
+        <button className="bg-yellow-300 text-blue-950 font-bold rounded-md mt-6 px-4 py-2">Entre em contato</button>
+        </Link>
       </div>
     </div>
   );
