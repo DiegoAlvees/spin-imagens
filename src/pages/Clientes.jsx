@@ -27,12 +27,14 @@ export default function Clientes() {
         <video
         key={video.id}
           autoPlay
+          preload="metadata"
+          loading="lazy"
           loop
           muted
           className="object-cover rounded-lg shadow-lg shadow-lime-100 overflow-hidden hover:cursor-pointer"
           onClick={() => handleVideoClick(video.video)}
         >
-          <source src={video.video} type="video/mp4" />
+          <source src={video.webm} type="video/mp4" />
         </video>
             )
 
