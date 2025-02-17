@@ -26,7 +26,7 @@ export default function Clientes() {
           return (
 <div
               key={video.id}
-              className="relative rounded-lg shadow-lg shadow-lime-100 overflow-hidden hover:cursor-pointer"
+              className="relative rounded-lg shadow-lg shadow-slate-600 overflow-hidden hover:cursor-pointer"
               onClick={() => handleVideoClick(video.video)}
             >
               <img src={video.jpg} alt="thumb" className="object-cover w-full h-full" />
@@ -46,7 +46,7 @@ export default function Clientes() {
           onClick={closeModal}
         >
           <div className="flex justify-center items-center overflow-hidden rounded-xl w-64">
-            <video autoPlay loop muted onClick={closeModal}>
+            <video autoPlay loop onClick={closeModal}>
               <source src={selectedVideo} type="video/mp4" />
             </video>
           </div>
