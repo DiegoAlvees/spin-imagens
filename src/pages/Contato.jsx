@@ -72,7 +72,7 @@ export default function Contato() {
             />
           </div>
   
-          <div className="flex flex-col">
+          <div className="flex flex-col col-span-2">
             <label
               htmlFor="email"
               className="block text-left font-semibold text-gray-300"
