@@ -106,7 +106,7 @@ export default function Contato() {
           <div className="col-span-2">
             <button
               type="submit"
-              className="w-full py-3 mt-4 bg-yellow-300 text-black rounded-md font-semibold hover:bg-yellow-400 transition duration-300"
+              className="w-full py-2 mt-4 bg-yellow-300 text-blue-950 font-bold rounded-md hover:bg-yellow-400 transition duration-300"
             >
               Enviar
             </button>

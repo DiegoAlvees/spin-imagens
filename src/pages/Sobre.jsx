@@ -20,7 +20,7 @@ export default function Apresentacao() {
         </div>
 
         <Link to="/contato">
-        <button className="bg-yellow-300 text-blue-950 font-bold rounded-md mt-6 px-4 py-2">Entre em contato</button>
+        <button className="bg-yellow-300 w-full text-blue-950 font-bold rounded-md mt-4 py-2 hover:bg-yellow-400 transition duration-300">Entre em contato</button>
         </Link>
       </div>
     </div>

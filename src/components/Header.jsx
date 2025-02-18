@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 export default function Header() {
   const links = [
     { text: "Home", target: "/" },
-    { text: "Quem somos", target: "/sobre" },
-    { text: "Clientes", target: "clientes" },
+    { text: "Sobre nós", target: "/sobre" },
+    { text: "Portfólio", target: "clientes" },
     { text: "Contato", target: "contato" },
   ];
 
