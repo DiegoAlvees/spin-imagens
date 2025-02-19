@@ -10,13 +10,13 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="flex justify-between items-center gap-6 fixed top-0 left-0 z-50 w-full h-12 bg-black/50 backdrop-blur-sm px-3">
+      <nav className="flex justify-between items-center gap-6 fixed top-0 left-0 z-50 w-full h-16 bg-black/50 backdrop-blur-sm px-3">
         <div className="flex gap-3">
           {links.map((link, index) => (
             <Link
               key={index}
               to={link.target}
-              className="text-green-50 text-base font-semibold transition-all duration-300 hover:text-green-300 hover:scale-105"
+              className="text-green-50 font-semibold transition-all duration-300 hover:text-green-300 hover:scale-105"
             >
               {link.text}
             </Link>
