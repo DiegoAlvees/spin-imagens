@@ -41,7 +41,7 @@ export default function Feedback() {
 
       <div
         ref={carouselRef}
-        className="relative w-full overflow-hidden"
+        className="w-full overflow-hidden"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
