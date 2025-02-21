@@ -32,6 +32,12 @@ export default function Feedback() {
 
   return (
     <div className="flex justify-center items-center bg-gradient-to-t from-blue-950 to-black min-h-screen">
+      <div className="absolute top-10 pt-10 px-10 text-center text-white text-2xl font-semibold">
+        <h1>
+          Experiência de nossos <span className="text-yellow-300">clientes</span> com a plataforma{" "}
+          <span className="text-yellow-300">360°</span>
+        </h1>
+      </div>
       
       <div
         ref={carouselRef}
@@ -40,7 +46,7 @@ export default function Feedback() {
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
       >
-        <div className="flex space-x-4 w-max animate-scroll">
+        <div className="flex space-x-4 pt-24 w-max animate-scroll">
           {feedback.map((feed, index) => (
             <div key={index} className="shrink-0 w-64">
               <img className="rounded-lg" src={feed.src} alt="feedbacks dos clientes" />
