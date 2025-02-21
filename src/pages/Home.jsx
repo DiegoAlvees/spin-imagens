@@ -5,10 +5,13 @@ export default function Home() {
     <div>
       <div className="relative w-full h-screen bg-black">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-80 video-bg"
           autoPlay
           loop
           muted
+          playsInline
+          disablePictureInPicture
+          tabIndex="-1"
         >
           <source src="/spin-video.mp4" type="video/mp4" />
         </video>

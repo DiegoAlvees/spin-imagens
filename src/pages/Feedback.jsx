@@ -10,7 +10,7 @@ export default function Feedback() {
   useEffect(() => {
     fetch("/feedback.json")
       .then((response) => response.json())
-      .then((data) => setFeedback([...data, ...data]));
+      .then((data) => setFeedback([...data, ...data, ...data]));
   }, []);
 
   const handleTouchStart = (e) => {
@@ -21,14 +21,37 @@ export default function Feedback() {
 
   const handleTouchEnd = () => {
     isDragging.current = false;
+
+    // Se estiver no final da rolagem, volta para o início sem animação
+    if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth / 3 * 2) {
+      carouselRef.current.scrollLeft = carouselRef.current.scrollWidth / 3;
+    }
+
+    // Se estiver no início, volta para o meio
+    if (carouselRef.current.scrollLeft <= 0) {
+      carouselRef.current.scrollLeft = carouselRef.current.scrollWidth / 3;
+    }
   };
 
   const handleTouchMove = (e) => {
     if (!isDragging.current) return;
+    e.preventDefault();
+    e.stopPropagation();
     const x = e.touches[0].pageX;
     const walk = (x - startX.current) * 2;
     carouselRef.current.scrollLeft = scrollLeft.current - walk;
   };
+
+  useEffect(() => {
+  const carousel = carouselRef.current;
+  if (!carousel) return;
+
+  carousel.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+  return () => {
+    carousel.removeEventListener("touchmove", handleTouchMove);
+  };
+}, []);
 
   return (
     <div className="flex flex-col  items-center bg-gradient-to-t from-black to-blue-950 min-h-screen">

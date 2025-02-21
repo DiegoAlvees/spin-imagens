@@ -14,3 +14,7 @@ html, body {
   min-height: 100%;
   font-family: "Afacad Flux", serif;
 }
+
+.video-bg {
+  pointer-events: none;
+}
