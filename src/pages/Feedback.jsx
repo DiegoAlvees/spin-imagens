@@ -31,9 +31,9 @@ export default function Feedback() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-gradient-to-t from-black to-blue-950 min-h-screen">
+    <div className="flex flex-col  items-center bg-gradient-to-t from-black to-blue-950 min-h-screen">
       <div className="w-full text-center text-white pb-6">
-        <h1 className="text-3xl pt-20  font-bold tracking-wide">
+        <h1 className="text-3xl pt-16  font-bold tracking-wide">
           <span className="text-yellow-300">O que nossos clientes</span> dizem sobre a  
           <span className="text-yellow-300"> experiência 360°</span>
         </h1>
