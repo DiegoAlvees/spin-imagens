@@ -20,7 +20,7 @@ export default function Clientes() {
   };
 
   return (
-    <div className="flex justify-center pt-20 bg-gradient-to-t from-blue-950 to-black min-h-screen py-10">
+    <div className="flex justify-center pt-20 bg-gradient-to-t from-black to-blue-950 min-h-screen py-10">
       <div className="grid grid-cols-3 gap-6 mx-3 w-full max-w-screen-lg">
         {videos.map((video) => {
           return (

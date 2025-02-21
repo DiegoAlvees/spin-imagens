@@ -26,29 +26,29 @@ export default function Feedback() {
   const handleTouchMove = (e) => {
     if (!isDragging.current) return;
     const x = e.touches[0].pageX;
-    const walk = (x - startX.current) * 2; // Ajuste a sensibilidade aqui
+    const walk = (x - startX.current) * 2;
     carouselRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
   return (
-    <div className="flex justify-center items-center bg-gradient-to-t from-blue-950 to-black min-h-screen">
-      <div className="absolute top-10 pt-10 px-10 text-center text-white text-2xl font-semibold">
-        <h1>
-          Experiência de nossos <span className="text-yellow-300">clientes</span> com a plataforma{" "}
-          <span className="text-yellow-300">360°</span>
+    <div className="flex flex-col justify-center items-center bg-gradient-to-t from-black to-blue-950 min-h-screen">
+      <div className="w-full text-center text-white pb-6">
+        <h1 className="text-3xl pt-20  font-bold tracking-wide">
+          <span className="text-yellow-300">O que nossos clientes</span> dizem sobre a  
+          <span className="text-yellow-300"> experiência 360°</span>
         </h1>
       </div>
-      
+
       <div
         ref={carouselRef}
-        className="relative w-full overflow-hidden pt-10"
+        className="relative w-full overflow-hidden"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
       >
-        <div className="flex space-x-4 pt-24 w-max animate-scroll">
+        <div className="flex space-x-4 w-max animate-scroll">
           {feedback.map((feed, index) => (
-            <div key={index} className="shrink-0 w-64">
+            <div key={index} className="shrink-0 w-60">
               <img className="rounded-lg" src={feed.src} alt="feedbacks dos clientes" />
             </div>
           ))}

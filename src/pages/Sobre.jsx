@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Apresentacao() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-t from-blue-950 to-black text-white px-8 py-10">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-t from-black to-blue-950 text-white px-8 py-10">
       <div className="text-center space-y-8 mt-14">
         <div className="flex justify-center">
           <img
