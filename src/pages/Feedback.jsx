@@ -22,12 +22,10 @@ export default function Feedback() {
   const handleTouchEnd = () => {
     isDragging.current = false;
 
-    // Se estiver no final da rolagem, volta para o início sem animação
     if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth / 3 * 2) {
       carouselRef.current.scrollLeft = carouselRef.current.scrollWidth / 3;
     }
 
-    // Se estiver no início, volta para o meio
     if (carouselRef.current.scrollLeft <= 0) {
       carouselRef.current.scrollLeft = carouselRef.current.scrollWidth / 3;
     }
@@ -64,10 +62,11 @@ export default function Feedback() {
 
       <div
         ref={carouselRef}
-        className="w-full overflow-hidden"
+        className="w-full overflow-hidden carousel"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
+        style={{ touchAction: "none", WebkitOverflowScrolling: "touch" }}
       >
         <div className="flex justify-center space-x-4 w-max animate-scroll">
           {feedback.map((feed, index) => (
