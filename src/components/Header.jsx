@@ -5,7 +5,7 @@ export default function Header() {
     { text: "Home", target: "/" },
     { text: "Sobre nós", target: "/sobre" },
     { text: "Portfólio", target: "clientes" },
-    { text: "Contato", target: "contato" },
+    { text: "Feedback", target: "Feedback" },
   ];
 
   return (
