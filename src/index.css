@@ -18,3 +18,9 @@ html, body {
 .video-bg {
   pointer-events: none;
 }
+
+@layer utilities {
+  .clip-moon {
+    clip-path: ellipse(100% 99% at 100% 12%);
+  }
+}
