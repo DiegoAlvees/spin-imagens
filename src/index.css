@@ -21,6 +21,6 @@ html, body {
 
 @layer utilities {
   .clip-moon {
-    clip-path: ellipse(100% 99% at 100% 12%);
-  }
+    clip-path: circle(98.6% at 100% 50%);
+}
 }
