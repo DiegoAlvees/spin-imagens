@@ -4,7 +4,7 @@ import LogoSvg from "/logo.svg";
 export default function Home() {
   return (
     <div className="md:grid md:grid-cols-2 lg:grid-cols-4 bg-gradient-to-t from-blue-950 to-black md:items-center md:h-screen lg:overflow-x-hidden">
-      <div className="relative w-full  h-screen bg-black  md:w-72 md:ml-[8rem] md:flex  md:h-[500px] lg:order-2 lg:col-span-1 lg:bg-transparent lg:h-[425px] lg:w-[256px] lg:left-[6rem]">
+      <div className="relative w-full  h-screen bg-black  md:w-72 md:ml-[8rem] md:flex  md:h-[500px] lg:order-2 lg:col-span-1 lg:bg-transparent lg:h-[425px] lg:w-[256px] lg:left-[8rem]">
         <img
           src={PhoneSvg}
           alt=""
@@ -40,7 +40,7 @@ export default function Home() {
       {/* div apenas no desktop */}
 
       <div className="hidden md:flex md:flex-col md:items-center lg:justify-center
-      lg:h-screen lg:pt-[] lg:order-1 lg:col-span-1 lg:relative lg:left-[8rem]">
+      lg:h-screen lg:order-1 lg:col-span-1 lg:relative lg:left-[8rem]">
         <img
           src={LogoSvg}
           alt="logo spin imagens"

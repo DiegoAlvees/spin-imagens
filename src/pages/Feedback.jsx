@@ -53,7 +53,7 @@ export default function Feedback() {
 
   return (
     <div className="flex flex-col  items-center bg-gradient-to-t from-black to-blue-950 min-h-screen md:justify-center">
-      <div className="w-full text-center text-white pb-5">
+      <div className="w-full text-center text-white pb-8">
         <h1 className="text-3xl pt-20 md:pt-5 md:pb-6 font-bold tracking-wide">
           <span className="text-yellow-300">O que nossos clientes</span> dizem sobre a  
           <span className="text-yellow-300"> experiência 360°</span>
